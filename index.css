@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    transition: background-image 2s ease-in-out, opacity 1s ease-in-out;
     background: no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -13,6 +14,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0px 0px 20px #242424;
 }
+
 
 main {
     padding: 15px;
@@ -29,8 +31,8 @@ div.top {
 
 h1.time {
     text-align: center;
+    font-size: 2.5rem;
 }
-
 
 
 div#weather {
@@ -57,4 +59,37 @@ p.weather-temp {
     margin: 0;
     font-size: 1.7rem;
     margin-left: -10px;
+}
+
+div#liturgical-calendar-box{
+   overflow: scroll;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   gap:0px;
+   align-self: center;
+   border-radius: 10px;
+   margin-top:-200px;
+   /* padding:1.25rem; */
+   height:150px;
+   width:300px;
+   background-color: rgba(12, 12, 12, 0.357);
+}
+
+div#liturgical-calendar-box::-webkit-scrollbar {
+    display: none;
+}
+  
+
+#lit-cal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+}
+
+#lit-cal-content > h3, #lit-cal-content > p {
+    margin:0;
+    margin-top:5px;
+    text-align: center;
 }
